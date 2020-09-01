@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box; /*Faz com que o padding dos elementos sejam anexados na sua altura ou largura e que não sejam somados ao adicionar.  */
+
+}
+
+body {
+
+    font:400 14px Roboto, sans-serif; /* Fonte peso, font tamanho, tipo de fonte, alternativa de fonte.    */
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased; /*Melhora a visualização da fonte dentro do google chrome*/
+}
+
+input, button, textarea {
+
+    font:400 18px Roboto, sans-serif;
+
+
+}
+
+button{
+
+    cursor: pointer;
+
+}
+
+
+form input{ /* Em todo input de formulario // Atribuindo valores de forma global */
+
+    width: 100%;
+    height: 60%;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0px 24px;
+
+}
+
+form textarea{ 
+
+    width: 100%;
+    height: 60%;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+    min-height: 140px;
+    resize: vertical;
+
+}
+
+.button{
+
+    width: 100%;
+    height: 60px;
+    background: #e02041;
+    border:0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;          /*background,filter 2s;*/
+}
+
+.button:hover{
+
+    filter: brightness(80%); /*Quando passar o mouse escurece o botão em 10%*/
+    /*background: green;*/
+}
+
+
+.back-link{
+
+    display: flex;
+    align-items: center; /*alinha os itens verticalmente, neste caso alinha o link do texto e o icone*/
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: outline;
+    font-weight: 500;
+    transform: opacity 0.2s;
+    
+    }
+    
+    .back-link svg{    /*Sempre que for editar icones é svg*/
+    
+        margin-right: 8px;
+        
+        }
+    
+    
+    .back-link:hover{
+    
+    opacity: 0.8;
+    
+    }

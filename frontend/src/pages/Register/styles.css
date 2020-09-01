@@ -1,0 +1,90 @@
+.register-container{
+
+    width: 100%; 
+    max-width: 1120px;
+    height: 100vh; /*Definido para ocupar a largura toda do corpo*/
+    margin: 0 auto; /*Define a margin de altura 0 e de largura automatica que é = a centralizada */
+    display: flex; /* display flex deixa itens alinhado um ao lado do outro como padrão */
+    /*flex-direction: column; Alinha o flex de acordo com a opção escolhida*/
+    border: 1px solid red;
+    align-items: center; /*Ajusta alinhamento vertical*/
+    justify-content: center ; /*Ajusta alinhamento horizontal*/
+
+}
+
+
+.register-container .content {
+
+    width: 100%;
+    padding: 96px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0,0,0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; /* espaço entre - joga os componentes de cima a direta e coloca um espaço entre eles */
+    align-items: center;
+    
+
+
+}
+
+.register-container .content section{
+
+
+    width: 100%;
+    max-width: 380px;
+
+
+}
+
+
+.register-container .content input{
+
+
+        padding: 10px;
+        margin-top: 8px ;
+
+}
+
+
+.register-container .content section h1{
+
+    margin: 64px 0 32px; /*Aplica em cima, laterais e embaixo*/
+    font-size: 32px;
+
+
+}
+
+
+
+.register-container .content section p{
+
+font-size: 18px;
+color: #737380;
+line-height: 32px;
+margin: 5px;
+
+}
+
+
+.register-container .content form{
+border: 1px solid red;
+width: 100%;
+max-width: 450px;
+
+}
+
+
+.register-container .content form .input-group{
+
+    display:flex
+
+
+}
+
+.register-container .content form .input-group input + input{   /* Define que todo input que tiver um input antes ira receber este css*/ 
+/*Só considera input que tem input antes*/
+    margin-left: 8px;
+    border:1px solid green
+
+}
